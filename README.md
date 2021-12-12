@@ -13,5 +13,5 @@ Simple Doodle Jump game with using pure JavaScript.
 
 # Thanks for tutorial.
 
-[Ania Kubow | Github](https://github.com/kubowania)
-[Tutorial and much more..](https://www.youtube.com/watch?v=YSEsSs3hB6A)
+- [Ania Kubow | Github](https://github.com/kubowania)
+- [Tutorial and much more..](https://www.youtube.com/watch?v=YSEsSs3hB6A)
