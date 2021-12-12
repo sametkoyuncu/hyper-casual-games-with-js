@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.grid {
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+    position: relative;
+    font-size: 200px;
+    text-align: center;
+}
+
+.character {
+    width: 60px;
+    height: 85px;
+    background-color: blueviolet;
+    position: absolute;
+}
+
+.platform {
+    width: 85px;
+    height: 15px;
+    background-color: tomato;
+    position: absolute;
+}
