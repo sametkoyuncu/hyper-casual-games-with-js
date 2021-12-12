@@ -49,14 +49,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const createPlatforms = () => {
     for (let i = 0; i < platformCount; i++) {
-      let platformGap = window.innerHeight / platformCount
+      let platformGap = 600 / platformCount
       let newPlatformBottom = 100 + i * platformGap
       let newPlatform = new Platform(newPlatformBottom)
       platforms.push(newPlatform)
       console.log(platforms)
     }
   }
-
+  //platformları aşağıya doğru hareket ettiren ve en altta silen kod
   const movePlatforms = () => {
     if (characterBottomSpace > 200) {
       platforms.forEach((platform) => {
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let visual = platform.visual
         visual.style.bottom = platform.bottom + 'px'
 
-        if (platform.bottom < 10) {
+        if (platform.bottom < 0) {
           let firstPlatform = platforms[0].visual
           firstPlatform.classList.remove('platform')
           platforms.shift()
@@ -82,9 +82,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     isJumping = true
     upTimerId = setInterval(() => {
-      characterBottomSpace += 20
+      characterBottomSpace += 10
       character.style.bottom = characterBottomSpace + 'px'
-      if (characterBottomSpace > startPoint + 200) {
+      if (characterBottomSpace > startPoint + 175) {
         fall()
       }
     }, 30)
@@ -150,14 +150,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     isGoingLeft = true
-    if (characterLeftSpace >= 0) {
-      leftTimerId = setInterval(() => {
+
+    leftTimerId = setInterval(() => {
+      if (characterLeftSpace >= 0) {
         characterLeftSpace -= 3
         character.style.left = characterLeftSpace + 'px'
-      }, 30)
-    } else {
-      moveRight()
-    }
+      } else {
+        moveRight()
+      }
+    }, 20)
   }
 
   const moveRight = () => {
@@ -167,14 +168,15 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     isGoingRight = true
-    if (characterLeftSpace <= window.innerWidth) {
-      rightTimerId = setInterval(() => {
+
+    rightTimerId = setInterval(() => {
+      if (characterLeftSpace <= 340) {
         characterLeftSpace += 3
         character.style.left = characterLeftSpace + 'px'
-      }, 30)
-    } else {
-      moveLeft()
-    }
+      } else {
+        moveLeft()
+      }
+    }, 20)
   }
 
   const moveStraight = () => {
