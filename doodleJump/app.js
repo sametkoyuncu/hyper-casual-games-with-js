@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     leftTimerId = setInterval(() => {
       if (characterLeftSpace >= 0) {
-        characterLeftSpace -= 3
+        characterLeftSpace -= 5
         character.style.left = characterLeftSpace + 'px'
       } else {
         moveRight()
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     rightTimerId = setInterval(() => {
       if (characterLeftSpace <= 340) {
-        characterLeftSpace += 3
+        characterLeftSpace += 5
         character.style.left = characterLeftSpace + 'px'
       } else {
         moveLeft()

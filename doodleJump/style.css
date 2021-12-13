@@ -5,7 +5,8 @@ body {
 .grid {
     width: 400px;
     height: 600px;
-    background-color: yellow;
+    background-color: transparent;
+    background-image: url('img/bg.jpg');
     position: relative;
     font-size: 200px;
     text-align: center;
@@ -14,13 +15,16 @@ body {
 .character {
     width: 60px;
     height: 85px;
-    background-color: blueviolet;
+    background-color: transparent;
+    background-image: url('img/doodle-jump-ninja.png');
     position: absolute;
+    z-index: 99;
 }
 
 .platform {
     width: 85px;
     height: 15px;
-    background-color: tomato;
+    background-color: transparent;
+    background-image: url('img/doodle-jump-platform.png');
     position: absolute;
 }
