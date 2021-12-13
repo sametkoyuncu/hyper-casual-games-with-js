@@ -1,8 +1,19 @@
-# About
+# Snake Game
 
-My hyper casual games for explore pure JavaScript. Every single game in diffrent branch.
+Simple Snake game with using pure JavaScript.
 
-# Games
+# Screenshots
 
-1. [Doodle Jump](https://github.com/sametkoyuncu/hyper-casual-games-with-js/tree/1-doodle-jump)
-   ![Doodle Jump Image](https://github.com/sametkoyuncu/hyper-casual-games-with-js/blob/1-doodle-jump/screenshots/doodle-jump-screenshot-1.png?raw=true)
+![Snake Game Image](https://github.com/sametkoyuncu/hyper-casual-games-with-js/blob/2-snake-nokia-3310/snakeNokia3310/screenshots/snake-game-screenshot-1.png?raw=true)
+
+# Controls
+
+1. `Arrow Left` -> move left
+2. `Arrow Right` -> move right
+3. `Arrow Up` -> move top
+4. `Arrow Down` -> move bottom
+
+# Thanks for tutorial.
+
+- [Ania Kubow | Github](https://github.com/kubowania)
+- [Tutorial and much more..](https://youtu.be/rui2tRRVtc0)
