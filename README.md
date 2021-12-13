@@ -6,6 +6,8 @@ Simple Doodle Jump game with using pure JavaScript.
 
 # Screenshots
 
+![Doodle Jump Image](https://github.com/sametkoyuncu/hyper-casual-games-with-js/blob/1-doodle-jump/screenshots/doodle-jump-screenshot-1.png?raw=true)
+
 # Controls
 
 1. `Arrow Left` -> move left
